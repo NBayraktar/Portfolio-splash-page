@@ -1,0 +1,171 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto Condensed', sans-serif;
+  margin: 0;
+  color: #ededed;
+}
+
+/* --- Typography --- */
+h1 {
+  font-size: 2.5rem;
+  text-shadow: 0 0.5px #313131;
+}
+
+h2 {
+  font-size: 2.25rem;
+  font-weight: 300;
+  margin-bottom: 0;
+}
+
+h1,
+.top-text,
+.bottom-text,
+.subheading {
+  font-weight: 400;
+}
+
+.top-text,
+.bottom-text {
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.top-text {
+  order: -1;
+  margin: 0 auto;
+  border-top: 5px solid #ededed;
+}
+
+.bottom-text {
+  margin-bottom: 1.8em;
+}
+
+.subheading,
+.apply-text,
+.fine-print {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: #8b2624;
+}
+
+.fine-print {
+  margin-top: 0;
+}
+
+.main-text {
+  font-size: 1.3rem;
+  font-weight: 300;
+  letter-spacing: 1px;
+  text-align: center;
+  line-height: 1.5;
+  margin-top: 1.8em;
+}
+
+.fine-print {
+  letter-spacing: 1px;
+  font-size: 0.7rem;
+  font-weight: 700;
+}
+
+/* --- Layout --- */
+.intro,
+.main-content {
+  display: flex;
+  flex-direction: column;
+  padding: 0 2em;
+}
+
+.intro {
+  background: #8b2624;
+  min-height: 250px;
+  text-align: center;
+  justify-content: space-between;
+}
+
+.main-content {
+  background: #313131;
+  padding-top: 2.5em;
+  align-items: center;
+  height: 100vh;
+}
+
+.img-main {
+  width: 140px;
+  border-radius: 50%;
+}
+
+.main-text,
+form {
+  max-width: 600px;
+}
+
+/* --- Form --- */
+input,
+button {
+  width: 100%;
+  font-family: inherit;
+  border-radius: 5px;
+  background: #ededed;
+  color: #313131;
+  padding: 0.5em;
+  margin-bottom: 0.8em;
+  border: none;
+  font-size: 1.1rem;
+}
+
+input:focus {
+  outline: none;
+}
+
+/* --- Button --- */
+.btn {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 700;
+  padding: 1em 0;
+  margin-top: 2em;
+  background: #8b2624;
+  color: #ededed;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: rgba(139, 38, 36, 0.8);
+  color: rgba(237, 237, 237, 0.8);
+}
+
+/* --- Media Queries --- */
+@media (min-width: 776px) {
+  body {
+    display: flex;
+  }
+
+  h1 {
+    font-size: 5vw;
+  }
+
+  h2 {
+    font-size: 2.625rem;
+  }
+
+  strong {
+    color: #313131;
+  }
+
+  .intro,
+  .main-content {
+    width: 50%;
+  }
+
+  .main-content {
+    justify-content: center;
+    padding-top: 0;
+  }
+}
